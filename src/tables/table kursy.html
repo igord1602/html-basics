@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table kursy</title>
+
+<style>
+        tbody#t02,
+        #t02 th,
+        #t02 td {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26) ;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        table#t01{
+            width: 60%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26) ;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #t02 td{
+            background: rgba(192, 192, 192, 0.144);
+        }
+</style>
+
+</head>
+<body>
+
+<table id="t01">
+        <caption><h2>Курсы валют в Гродно на 09.06.2020</h2></caption>
+<thead>
+<tr style="background: rgba(153, 228, 247, 0.220);">
+<th>
+    Банк
+</th>
+<th colspan="2">
+    USD
+</th>
+<th colspan="2">EUR</th>
+<th colspan="2">RUB 100</th>
+<th colspan="2">EUR→USD</th>
+</tr>
+</thead>
+<tbody id="t02">
+    <tr style="background: rgba(153, 228, 247, 0.220);">
+        <th></th>
+        <th>Продажа</th>
+        <th>Покупка</th>
+        <th>Продажа</th>
+        <th>Покупка</th>
+        <th>Продажа</th>
+        <th>Покупка</th>
+        <th>Продажа</th>
+        <th>Покупка</th>
+    </tr>
+    <tr>
+        <th> <img style="width: 15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAeFBMVEW4KS////+6LzXx1NW+PEL89/j78/TbkpX++/vy2drJW2C7MjjBRUr57u+5LDLDS1DWgoX35+fFUFX14OHHVlvKYGXvztDtyMnLY2fRc3fBREnrw8Taj5PWhIi9Nz3em57hpqnms7bemp3ou73Nam7go6XSeHzmtbfV4CWFAAAFE0lEQVR4nO2Xa5OqOBBA0zxiCBJeQVRAUdD5//9wO4Txjru1W7VMVd87VX0+DE3ohEOTBEfAD0T8boEtsDQVP1ha/BhYmgqWpoKlqWBpKliaCpamgqWpYGkqWJoKlqaCpalgaSpYmgqWpoKlqWBpKliaCpamgqWpYGkqWJoKlqaCpalgaSpYmgqWpoKlqWBpKliaCpamgqWpYGkqWJoKlqaCpalgaSpYmop/lcaGMvo9Tm9E5T/r+V/S4R8hHW6UNkFg/MHz68SIz3CJxGeGi15Zxnzpi2e/knwP449r/pfQfEP68tz1exxgX9x3Czme5AOe9Ed3+dhj2+nibuQz7sUl6HdzKoR1l4pKiGrwXXEk60NMcp2La7F3x/uuwPz5UUSXYXfCGzzv91OwXdrKWBbYvwljz2zELouVUnE2mryVLpSJxiepfUKyT2U8RuIhfdYgTuuVWDZFuSblOPYR2ws87uP4gLcbVWjPdTwF4lnjTbdXOu0xPmBZjgl4TuKJyyNOMoDBdApUXSuAJBVV6RPqfQpwE32Mq7nGNqkLufaFech8IPEFiAmDBx5zf7sbJHpfQmec6zXdLp13GKt8kZ5ypLoIbLrZvDoO+yaD8JTncwvxEysNN/0MnbSCMepA3qvc7jC5srpIINRaX4oMRuvGQae0dgWxXhrPx1VaTAqms9gu3UjAOuL8QOmwGAacg1ENSbO8BYMlvLsFU4D6MLqEuzh3Xnq61tC6KXBWkKBAdUAZl5lB2w/D041+ynDseFik69NRd176sIvxAcV26aCH7CrdyTo95MFWCbSVz7vGOFvco4FqzTODq8hbLy2lgptbbFhOifL2AO0q7cgmLPCk5BjCLXXSqqwT6aRryCSUs/mGNM6O7Ir30U5ahglO0Q+N0nZJM48YlpprUJ1Bn8dL2nFz0zLtIK7epLPErYeHSEvIUBrfWr6ku5XhpN2yOItvSOMbdIPBLmgS6Cp9wgGPIRzWSu+kr/TRSWOle1Gt0u1HBh+u0kEN5Xulb4294nQSc7yMLXdOuuyL4uClyxriPt0uHTxAZSWWN4mwvjecoRhWuNacanC+4Jy+YZ7ZgRr9E9hV+tFgDd3EtDjU/k36ilsaqJvoFM6JTEEX7DHH/FqIWKnsZDZLY93Kfj7hK7MoHT6HB14QHwDtrI/9eMJdLuu1LkqQs03cdvhZ6THC/eym9YxbzePyJt32xYTSkYJymPsaant+3/LcUjnYzdJYyYMrgYJhXvdpdQ1eW/YoxnUHVt0F/5Z6qXTu9mnzXLdtKN1csuEqvXYo+wFgioQZQfaRe5Uv6dYEblONtkpfpRzx7c+lnIZOOrIJy1bUPn4ElzFbW20mM5w01SRD/CJK/CI+fVa97AS2k9Mi7RvLe/ohpft2D1JOZylb90XEremcSPwiNomU/UZpkzfarePUNvZcNVrb9dueVsdZ2+VHz8Vi+1mYvW6C5UpjA6N1HiwxBq8ey+KNLH5iNA4TVLqJ8HEi3VSXRleYnx9tGljt8qqmcb9xNlXaGL9fmk8+E76crNGX1NfJ1y5vQ/2tQXwZ4hV+51feb+X/Sv+8/1z+ZFiaCpamgqWpYGkqWJoKlqaCpalgaSpYmgqWpoKlqWBpKliaCpamgqWpYGkqWJoKlqaCpalgaSpYmgqWpoKlqWBpKliaCpamgqWpYGkqWJoKlqaCpalgaSpYmgqWpoKlqWBpKliaip8u/cNgaSpYmoq/AIgxWX+tB4TcAAAAAElFTkSuQmCC" alt="Абсолютбанк" title="Абсолютбанк">Абсолютбанк</th>
+        <td>2.386</td>
+        <td style="color: red;">2.383</td>
+        <td>2.681</td>
+        <td>2.698</td>
+        <td style="color: red;">3.453</td>
+        <td>3.463</td>
+        <td>1.126</td>
+        <td>1.136</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://api_ru.myfin.by/bank_logo/logos//alfabank.png" alt="Альфа-Банк" title="Альфа-Банк">Альфа-Банк</th>
+        <td>2.355</td>
+        <td>2.4</td>
+        <td>2.665</td>
+        <td>2.715</td>
+        <td>3.37</td>
+        <td>3.52</td>
+        <td>1.11</td>
+        <td>1.152</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://img.rosbalt.ru/photobank/2/d/0/5/Wzx4TVmq-580.jpg" alt="банк ВТБ" title="банк ВТБ">Банк ВТБ</th>
+        <td>2.34</td>
+        <td style="color: red;">2.383</td>
+        <td>2.64</td>
+        <td>2.685</td>
+        <td>3.38</td>
+        <td>3.47</td>
+        <td>1.12</td>
+        <td>1.14</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://lh3.googleusercontent.com/proxy/qryePU4-3ufLQRn3NEeav6N-vN5egnsfvkJo2mIu8QQSxJPLieU_IlCIkr_C-38WM51wUBVE_pB-qGxjYQ4RtkhV_Ok" alt="Белагропромбанк" title="Белагропромбанк">Белагропромбанк</th>
+        <td>2.36</td>
+        <td>2.397</td>
+        <td>2.55</td>
+        <td>2.73</td>
+        <td>3.27</td>
+        <td>3.52</td>
+        <td>1.109</td>
+        <td>1.144</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://belarusbank.by/i/bbZnak.png" alt="Беларусбанк" title="Беларусбанк">Беларусбанк</th>
+        <td>2.365</td>
+        <td>2.2395</td>
+        <td>2.63</td>
+        <td style="color: red;">2.682</td>
+        <td>3.35</td>
+        <td>3.475</td>
+        <td>1.0981</td>
+        <td>1.1134</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://lh3.googleusercontent.com/90eoN1hciFmM436z4Bwlqkw4Zfc09GnxPAXcXv5XJabjr3G1GwEmlF8RDXZWxDNUFA" alt="Беларусбанк" title="Беларусбанк">Белгазпромбанк</th>
+        <td>2.376</td>
+        <td>2.398</td>
+        <td>2.669</td>
+        <td>2.696</td>
+        <td>3.415</td>
+        <td>3.485</td>
+        <td>1.116</td>
+        <td>1.134</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://www.borovaya.by/upload/medialibrary/6f9/6f945ad67cc8ba6bf7d51f60d9bbd447.png" alt="Белинвестбанк" title="Белинвестбанк">Белинвестбанк</th>
+        <td>2.374</td>
+        <td>2.386</td>
+        <td style="color: red;">2.688</td>
+        <td>2.712</td>
+        <td>3.435</td>
+        <td>3.472</td>
+        <td style="color: red;">1.129</td>
+        <td>1.124</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://img.tyt.by/finance/240x160/bank_logo/bank_logo_new/10/5/bnb_new.jpg" alt="БНБ-Банк" title="БНБ-Банк">БНБ-Банк</th>
+        <td>2.369</td>
+        <td>2.398</td>
+        <td>2.665</td>
+        <td>2.699</td>
+        <td>3.446</td>
+        <td>3.495</td>
+        <td>1.11</td>
+        <td>1.14</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://static.ict.moscow/files/productcard/logo/sHDAtSgl_400x400_0_1_0.jpg" alt="БПС-Сбербанк" title="БПС-Сбербанк">БПС-Сбербанк</th>
+        <td>2.335</td>
+        <td>2.415</td>
+        <td>2.635</td>
+        <td>2.725</td>
+        <td>3.42</td>
+        <td>3.54</td>
+        <td>1.119</td>
+        <td>1.139</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://www.occrp.org/images/bta.png" alt="БТА Банк" title="БТА Банк">БТА Банк</th>
+        <td>2375.</td>
+        <td>2387.</td>
+        <td>2674.</td>
+        <td>2.69</td>
+        <td>3.44</td>
+        <td>3.485</td>
+        <td>1.122</td>
+        <td style="color: red;">1.132</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://grodnovisafree.by/media/k2/items/cache/6cdb4ac6ccf86fc9922b1b1ecf5faa0d_M.jpg" alt="Идея Банк" title="Идея Банк">Идея Банк</th>
+        <td>2.367</td>
+        <td>2.39</td>
+        <td>2.66</td>
+        <td>2.692</td>
+        <td>3.425</td>
+        <td>3.6</td>
+        <td>1.117</td>
+        <td>1.137</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://lh3.googleusercontent.com/3B7-hD5-s4itTqBHgXEsFKbDafL8SOLckhhlY-l-aQUwYp4yI1VnMQ5MpnmKxerPmzz0" alt="МТБанк" title="МТБанк">МТБанк</th>
+        <td>2.373</td>
+        <td>2.386</td>
+        <td>2.677</td>
+        <td>2.707</td>
+        <td>3.435</td>
+        <td>3.475</td>
+        <td>1.124</td>
+        <td>1.141</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://store-images.s-microsoft.com/image/apps.62258.13510798887412480.06fe2460-b75d-4184-8438-60d78ced3523.36368dd6-52a0-4de6-9485-033c2ad91bbd?mode=scale&q=90&h=300&w=300" alt="Паритетбанк" title="Паритетбанк">Паритетбанк</th>
+        <td style="color: red;">2.379</td>
+        <td style="color: red;">2.383</td>
+        <td>2.68</td>
+        <td>2.694</td>
+        <td>3.446</td>
+        <td style="color: red;">3.46</td>
+        <td>1.124</td>
+        <td>1.133</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="data:image/png;base64,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" alt="Приорбанк" title="Приорбанк">Приорбанк</th>
+        <td>2.364</td>
+        <td>2.396</td>
+        <td>2.675</td>
+        <td>2.712</td>
+        <td>3.38</td>
+        <td>3.54</td>
+        <td>1.116</td>
+        <td>1.147</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm1pk_nmnQED7tEO2t9XccynjrbpV2CYTzO01GKac0m7xHW8vp&usqp=CAU" alt="РРБ-Банк" title="РРБ-Банк">РРБ-Банк</th>
+        <td>2.375</td>
+        <td>2.385</td>
+        <td>2.665</td>
+        <td>2.7</td>
+        <td>3.445</td>
+        <td>3.47</td>
+        <td>1.125</td>
+        <td>1.14</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://www.aidapioneer.by/upload/iblock/a1c/a1c7d968f6a18e7e11c197d776fa5b68.jpg" alt="СтатусБанк" title="СтатусБанк">СтатусБанк</th>
+        <td>2.335</td>
+        <td>2.395</td>
+        <td>2.62</td>
+        <td>2.685</td>
+        <td>3.43</td>
+        <td>3.49</td>
+        <td>1.103</td>
+        <td>1.135</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="https://ftime.by/sites/default/files/press/technobank.png" alt="Технобанк" title="Технобанк">Технобанк</th>
+        <td>2.373</td>
+        <td>2.387</td>
+        <td>2.67</td>
+        <td>2.693</td>
+        <td>3.448</td>
+        <td>3.48</td>
+        <td>1.1186</td>
+        <td>1.1349</td>
+    </tr>
+    <tr>
+        <th><img style="width: 15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABPlBMVEUeRaIfRZ8pTaUgRJ02Vak7Wq4jRJoXRaRNY7D///8gRKL///3///z///kdRKH///jh5u2Pmrjj5/MKPJuUosJPcql+i7TDy9hGXZulsdGdssy2v9JneKLU1ueElLmbpMbr7fCxvctLWp2Xm8cAMJdNY6vZ4O6ZnMGxxM1ugaiutb9EY6ebq8mls9FxhrLY4u0/WqT/+v+ns8ggQ6m1tNOKoMOjpswDO6KFkbl5hr4fR5aktcjQ0OmHnLhdaao+VZLU1+EyTJQAK5f//+4AMpUAM4sMOaRSa6dvkLRlfbIbOone7/5Oc6RlebpwfrV9jLGMlqXW4OC8zOcjSo99lsuawMtLUqN7ka2DhshOY5qws9pfaKaLjLsmTofj8e24wMgTOKtJZJEALqAALXo1TYtaapnh5PoJPIZmeMA6WLRd0snfAAASyUlEQVR4nO1da0PbxprWIKrJjG6GIRgwNgoYaI6NLwwgUEKwsSTXThO2JNscugmHZpPm9P//gX1GMrdgcno+mF1l9bQBbI9m5nnv70gh2g9T3zd+0KYdR/9uYRB9Wpvm1CHfKTRdc6BDjRLtewVJGBLte2ZIcoYZR84w+8gZZh85w+wjZ5h95Ayzj5xh9pEzzD5yhtlHzjD7yBlmHznD7CNnmH3kDLOPnGH2kTPMPnKG2UfOMPvIGWYfOcPsI2eYfeQMs4+cYfaRM8w+cobZR84w+8gZZh85w+wjZ5h9PAhDrmnSF+PhUE6SEZPCAzDkgBb8NDceA50YuhoxKTwMQ6LxXxfGYHX188rQl47jTG75B9Ihby1tLd7B0m+LncLLZYMTfXLLPwxDXf/hxeO7+Lm//ur161ctImWmrVRTcebFycn8Hbw/+Y9fgNNhEExOiQ/DUH9TXxqD7cXfdkql0pPSmaQTW/uBdKitjkNr4el2/XCpXm9wObG1H4Ah5Vw+Pty9RAX/Kaytre3OlTsJmqWATMoTHybji/eba5sKa2ublZRiBVirzNVXgPpSfW1aTsgVH4AhIY5s1dZrCRYGO7extbW989vOzpOfogkZ6gMw1HWntrS4pfIh/nSaN7Cxcfn9j9md4WSWnzxDbuiytZ7irLWw3Fge4elNNBo/TelkEvXpA+jQIOJ1ZYT9uZeF2QSjb9fwGk5GGXLCp3evK+2ZwxF2D/92A9s72+8dZxIF+ENEGjl9VrvE+vrVT6tr9WsszS01uJNNHWpcb8yt3MHaXAkB5grNjeauP5EO40EYvt2v3MV+ZWXzJuZ+nUwP9RBWatTWH11jFFYfrW79eBtdnlGGlA7+88ftFM+Ayx9L5fLza3Q6h/Fk1p88Q2K0fm2hn6+1arXWNRY+n5w0gPn5xk/v3r17//epCbUXD6BDWTk8VLFlc2XzxvnMYbkw66VQqfG84WeWoVNDnT3KgSs3jjBupIpnzyp+LCe0hQkz5Bry/dlZGlxqrc29lZW9O1jb21vXA5LNyhsM9bfpGdTe4uJvs4WxmJ0Rk2vyJ89wupEeypwgoozLiyozzjS6zqR+GdekGRJivEjxX+svFov34fluNKnjtgkzdKhsIAcubW2p/rBYuhfFOd2YzBYmHUspPzu6QuVw5j5svp/UDiZtpZxcnkBtbpaSnnB8sPnF+zmb5zTEWa+8vcRmXaX6G/3F6GVSAdT7FxPawmQZ6txYXRidjh7tLW7dws2XizuvxGS2MGGG8kPz3PsrOD9/PKH7TxNmGJD1xl/CwcFUNvOhlMOljXKnrNDppN/HolMi2ay8KdGj5Scq4T1RuD8fPln2s6lDg3CpHW7fPab5GvUjmtHKm1Muo1OV8Zr3A58u+lntLVB6O5L/c03dlBmL5HbNzFuDZ7SmUeCcd0//sZN64tdIfPAfp4MJJUPtoRjKqHT+9Sn+CMqAi0ci0/fx1ZMKXBs8XR6Hp08Hr1aD7D+poFH9bGOMAjfKpZV+4EzwiaiHYuhwaoTVOwircexLOrmnFBQehiGSBnL/HahfKM4dfbJrP9SziUQdft+FRgzyXejwfxM5w+zjGwz57ac++fiHQPkIt0eNeVdFlfun/OqCbyz4L7dw4+0HZohQ89AM+b/NkDsJvjE9vcWQ3hiEkEm12ycVarBzexrnGvRq1juL3oCjnm+4uvb63b+gQyeJ5jeoXMf4a8lrXAhK5dVeuKSCXlGSlyPVCz8EhHNzIQzAZNcM5Ve55PJq7daiqWSuRErV+viYXu9XLcfFNxjiZwl+tUfrC0Redm2crvdHN6jXW8InRO0ooIZ6umJBSiU9dLvds/XaIwPKUlwX+uuPtEBywyCOWN1fPC3uHNbiyxKUGlTrqxtSqfFiV1P92uUK67Va/0xLxEGNKZE8cTSVLGJIXapHyFZl0m9R9dFCHBiyhUtqlKsd6z/0H62fPZK6cw9DtSdHvLetXsHgzuiwnX/x7LY5QqEu4kSO4ZJtWXYzMIzENp26y9yy4JQ43F9um8wNlLC04xcdy7Rs2zRZ6Y1MntEDo/CJ3bbccihTO/O3MddoAct2e39EiZUTQ3YLeN+e85W0A2nwgmVZb0VikqJoM/tHn0rRsdpm3eeEB9WDc8t1vYGuyXsYTmn+RfV4x2LW6XHVH91e511mX67PLPc0cgjWPjIZY5bXpalxREXGzK2QqmnFHDOt2WMKjtGi2VPs2sx27aaR3GWShr/AXGbbs4EyB0J51MFUlzI0LasYJbfcDD2uM7XojlDXGbFRY1j1SNfVp+HLnsne+7pmzDLLWo6ppld3XddkG6sX0rjHSnk83C81z00XE3nN7YXjZPviwOpBdJaSr2232cBBXVkttqEbl9USiyE8bLuWeQJZE00Pf3RN80lEOK0+d221KSUNZrGtoZpQvjlumpC/2zaUG+NLZIOwlUIxnItloAbqR55rwaCeR2ofxkUwgCDcY2XlGn8DMbp9yeW66Vrsk9RkuM1s0y5/cYxkxB2GuhRvSoxhc0roto09dboXgS79EmRUeP92f3e70Ma7pVBOyacYqASxDCFqPIgXcAnDemglpP4L6OxeBOh+Tdd2mw0RflhyFc9PF8lO32Gs+v93X+nQuDhibde7vtVf/zPxZ22qumMzt+2y2aEyOhpcbLms16k6KsXKZdiB1zUcugb/KOicfikybGkxvLpp/jVDGZ0wt2eBAnau5G5i2Q+SyGjDMtluKHz/4gv2zmBDmmhCmZ7JzP3kKNDwG9iyF3AVHmTNtC22EJPqvu0qxfmU0Oo+xMSWleHT4Ut1MQg/VQxhffsgUjwWWMFP/oKNkT7IJ/tQtIcQ4L1RDDnxOyCznYhFE3UorCMMLkq2aZV82t0wQbBybFwdbH3FkItDUGNeqfIEblh4t1hwe2DzkdAvsC/2OqZQysfnYHgaaQJ7Z8UdiGIxYaiLJYu5z6uqKQpEA2uzkPKuB7eAPKRuSBpYUFrFR1701d5KJTjYnJ8UBNWSa1p1oRF99G9PJedYmhY14VUnnglxJYFDYkJmDlQyIDwqY4ItX5dRwbTMSvXsJRxi9rOAn/AxDFV2U1q3S93q8SkcrFQ9/lKESNwWp2fQqLcqAyKJaILhiiDBLCx5YQ8XFOPED8MNl1krH5UC9LAOA+hUjXAlMUyKMA/DkfXtZ39bFogt0+eYt7vlmnYpTBkWYDLLQkqBdK1cLMn4BJIyWfm/z+GJDV8tEp/BNdibRNF+5MHD530iA7gVO3vlIShsnDlOwLk+hqFEpN2AzZUiSgQEZe8K3WlBYO5r7q/BhpoqQgf+Z2XpjxxRd9u90sd9u91r+lNc04nAPtj2T/sKJx3oc/sCoR3uuBild+m5k/xlLs2gEZzJ3P64BG8oh0m6FT1mtp/2FWpBKJEUOHF0GnmQ+SCcxcwzyn+deB6WPvsuWaQyg6Bi1mARj5lrezMYapXeOPzmY/G3dagE1msPuZQLMEqzTw0SerblDqQomVZv6zgU4vhDE4PKkWidw/ym/QGYzBooTXSnb6oAxdJ8gi/mQczxscWO4GfJCjytFDQOk2iz4UUFKXM2iZHyFQam0dZiXrEPmSH8kHgF/lWMqjAptq10yP2SNQrLagXowcPUSCiu2bZY2/SCWPLb9csNhjQs2W13p4rs+9RGmhtKQiLPMu2+HxXwRkfd6TtF/EtUWIKBbMWyDwdgR1K54QxLFh5tE9+nnbBuJxxIqsO0kqLGsAxvX/H9ZTBkKjSReC6Ja2m+ZT3WiBVDZGGrzfoUkZyZxZCrSNFUAdlml7Cfh4QcFyFtZBiQ34xvHy7fYiiNArx9PtaJnxQnITJKC0bvBX43UY7b6/WQDS3zQNA+s3pe1wmOkLzYZ4RHgm2YFrtkifEFPwg7WLgkRp2ThHh1jjA0gHWeDwk9s6GFVVgVqZ6qxJpebCGAM5RlGq+WzLZZCgPETNMqKHOWXdgjBmIbrpJl290T3Dj2sCvEbpe1UX4E8l6GXQ9SGEB6YRlJdktoUswhmhSr/gBiMxMrgv15DUHDDYhxtxpf8HPMPK8MSBRgkPUPR61W6+jTE5VRfENHqcH2/Cv9oYcihh7NwvQPPoqLaQ/aeO0QOOgsJq+oW4mv9zdUBbTnc+r3sd55cCE+VlAFnCv3ij+rQuTsaBpo/W7ZbbvhSMNQcrE2yhArq4e3HjW+yZCoyK6iJKWBB2U2KImPzlVovhB1lcu9c8Db2O2KKX9epdqZSqUy48GuVgQotLBdq+9LBYRV094TTtCGWjfFiCGJEGiCQOxatunt725WZpQBzAmN6y3UKSxQyVD6X1CHuiUxRYYbqHo773cP97dRPNk17NyfA+mmkEEQkLivjGUV4mko3ZeD5LV3dGHcq0NDhXvvUwjZQWNBHH0uwJ9KVRIV4dLPInUEKCIhVYiDuHpm4hHwpRI4iIHa5FAayGVOF67kvnJoVxnuiq8yEby78rxY3OL0zbmt/A/xiKEYYFsRcknDtdxmpLJEQKtlpKrtmA7nYbjQUmJ++KPubqDUbtsln6h+Sp+B48wOqRE/g6A2vshqU1nZdnwfQ1Rsm8oMZ1eW56AX73PjVIlmA+X8EBkXeQcBI4mFRrTnIrVaSYUMMZudkBtiBftohpo6HpSfwd2dps6Upyo86I3rsIxzsHonqk8YLoEX4atCpxpwgYhkPRum3josuG2sRo2Ccg3lX7aKzWYFhgsDZ2xecHXYGp6iaDwNNeMjKhkT1QIfKGv1WvfFUp3KoOP22m4S8FW4UuVg0TA0JA9VU1zeICK0hbhsJlETvo1B5yAmnuPFMz/JtP4mPi3o1BGIwTZ7E0uD+kOUjKzzRVWvbhpwTcXR8o4DKcp4s+GrZl6G6EpcEwXtmtJyMtDGeojcPlUtDmNnaXMbzaqkrWgrYTcEIn9Tpe+t+B6GaAOocWr12izt01w45flufEGIPw9NzUaXD9dBeD2rV+4mD/t2D123besGDVA4sfnUQkQJu99Buy9QNsP8PlfD6LVyAfa7PEamsE/VxautT3tKlKEhAxQn9uvaY+T7BiK/Za3E9AiJir07Sp4o/nAOts9D6gxUPEgfCUfvBtp96cgzrMZaXHmKqSz6VzqeIVUco0HRSzITpOcV5w2f65yLLfhLuUoT/XBUECqN/+wnhwsxCtC2+yiQC5ALW00ZQrqW+15QXT4yE0V4f3gq36DMRnmOt2rqYimjfbXStBM/btuqTLCSbAj7QB0Y/dYzreZQJgPDMkx1Q2jRHvRZHiY1mVyGMUPXQXwIxXlQMDL6Rs9to9wczzCF8I9RnaJv+iSqoTp0gWeE8GB7JX1OmQcIlGa7d5oGZS77SoAHAW0ok0VRr46E3ihWkC6nw03kr7S/h+sOBIHdtu1nYdK6cR0yt9xXUuxjjrTxtZXtbH2ZcvqqiRskxz5aEJdgRR43qh1IYFEVtpA7Mpm7EdLg+EfLxH7USQiUqJrJFjXGVd6XMOI1TP5HZGjJURhPymQ0PempEaGiYvYsc5WmJy4ErbrN6ka8iLU7VRWKYCysZ513UYdSLdr3bDutVIpTPhIsPmLdpO5wiNNX6WJNiBLoX3a/3ukZ6tIqSmSGbSubQLW/rWLaAonQa1onI4bwXaaK6PAlfphJug0pmhiIDE7v6w9Tga2fHJy8vjqD4nzq4ODv80H6qw8IEYP5gwMId3SWNdU4ODjoO3xwcjD/wleFlaM/wlsDVQDDxER3plzwCsXDdfTlhv7q4GB+EGtq49zAxY3GfJ87/8SUCnj5OBASZcHU/rvGyYKkidXLoKaewp02+AkGdWVSIzmDk8b8go6mWD2ku5ocKEp5Nt9oHJzIq5PMsTokHE0MvpJRuYwrkUlimpTsyFdSx8dS1V/QgyYdHQ2PRMT3EY2VMztEGroj4sS1CZUxCnZRVS2wkXziU5kmYLzEJ+ivOTVgv45D8TI5hORUChoLnt6ZMtTsAJpTJxmfMMQQH0ZMKETio2NRiQZaTDpobtzTAd/ArSPkm6fD/P7jcD5ufKJ3Qm5+9NVh9+ibuqN4a9bkn5omdwd+tVNCdP3Wdfy+qu0b+Grab7+8560bG7gpr/THMRu/R4z3zzz+ur/O8Bu3FO5u7xsD7jIcc6NDu/vW/Tr89m7+MsN/4+Xd925T+vpl+v3unSnt1kh+6QP/iuH1yAT/r+8ffifIGWYfOcPsI2eYfeQMs4+cYfaRM8w+cobZR84w+8gZZh85w+wjZ5h95Ayzj5xh9pEzzD5yhtlHzjD7yBlmHznD7CNnmH3kDLOPnGH2kTPMPnKG2UfOMPvIGWYfOcPsI2eYfeQMs4+cYfaRM8w+cobZR84w+8gZZh85w+wjZ5h95Ayzj5xh9pEzzD5Shnwy/yT2/w1wDoY6Mb5fEOjwTyk5/V7Bpf+n9qpWqz36XlFbX3/1P6yb+XQHVvbnAAAAAElFTkSuQmCC" alt="Франсабанк" title="Франсабанк">Франсабанк</th>
+        <td>2.37</td>
+        <td>2.39</td>
+        <td>2.62</td>
+        <td>2.69</td>
+        <td>3.4</td>
+        <td>3.5</td>
+        <td>1.109</td>
+        <td>1.151</td>
+    </tr>
+</tbody>
+
+<tfoot>
+    <tr>
+        <th colspan="1">
+            <div style="padding-left: 190px;">12:59</div>
+            Торги на валютной бирже
+            <span></span> 09.06.2020
+        </th>
+        <th colspan="2">
+            USD 2.3785 
+            <span style="color: green;">+0.0053</span>
+        </th>
+        <th colspan="2">
+            EUR 2.6783 -0.0053100
+            <span style="color: red;">-0.0053100</span>
+        </th>
+        <th colspan="2">
+            100 RUB 3.4592 
+            <span style="color: red;">-0.0172</span>
+        </th>
+        <th colspan="2">
+        </th>
+    </tr>
+    </tfoot>
+</table>
+
+
+</body>
+
+</html>
