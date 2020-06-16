@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex site</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .note {
+            background: yellow;
+            padding: 5px;
+        }
+
+        .note h4 {
+            text-align: center;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 0px;
+            border-radius: 20px;
+        }
+
+        .bigimg {
+            height: 200px;
+        }
+
+        .imgbig1 {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .smallimg {
+            height: 60px;
+            padding: 10px;
+            background: url(https://picsum.photos/seed/picsum/600/300)
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        @media screen and (max-width: 700px) {
+            .content, .navbar {
+                flex-direction: column;
+            }
+        }
+
+.forms {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.forms button a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+color: black;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="note">
+        <h4>Consequat duis sint tempor nostrud esse sunt elit aute velit reprehenderit quis Lorem.</h4>
+    </div>
+
+    <div class="header">
+        <a href="http://127.0.0.1:5500/megacorporation/code/flexbox/03-flex-site.html"><h1>Megacorporation</h1></a>
+        <p>Proident nisi minim eiusmod aute.</p>
+    <div class="forms">
+    <form method="POST">
+        <label style="padding-right: 32px;" for="f1-1">Login:</label>
+        <input type="text" id="f1-1" name="f1-1" value="John">
+        <br>
+        <label for="f1-2">Password:</label>
+        <input type="password" id="f1-2" name="f1-2" value="123">
+        <br>
+        <input style="margin-left: 79px;" type="submit" name="SendAction" value="Log In">
+        <button><a class="reg" href="#">Registration</a></button>
+    </form>
+    </div>
+</div>
+
+    <div class="navbar">
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 2</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
+    </div>
+
+    <div class="content">
+        <div class="side">
+            <h2>About Us</h2>
+            <h5>Our ofiice</h5>
+            <div class="fakeimg bigimg"><img class="imgbig1" src="https://picsum.photos/400/400" alt=""></div>
+            <p>Ut sunt elit ipsum reprehenderit nulla.</p>
+            <p>Ut sunt elit ipsum reprehenderit nulla.</p>
+
+            <h3>In est officia veniam enim ea ipsum.</h3>
+            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+            <div class="fakeimg smallimg">Image 1</div>
+            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+            <div class="fakeimg smallimg">Image 2</div>
+            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+            <div class="fakeimg smallimg">Image 3</div>
+            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+        </div>
+        <div class="main">
+            <form method="POST">
+                <fieldset>
+                    <legend style="background-color: #000; color: #fff; padding: 3px 6px;">Registration</legend>
+                    <label style="margin-right: 38px;" for="f1-1">Login:</label>
+                    <input type="text" id="f1-1" name="f1-1" value="" required>
+                    <br>
+                    <label for="f1-2">Last Name:</label>
+                    <input type="text" id="f1-2" name="f1-2" value="">
+                    <br>
+                    <label style="margin-right: 37px;" for="f1-3">Email:</label>
+                    <input  type="email" id="f1-3" name="f1-3" required placeholder="email">
+                    <br>
+                    <label style="padding-right: 7px;" for="f1-4">Password:</label>
+                    <input type="password" id="f1-4" name="f1-4" required>
+                    <br>
+                    <label style="padding-right: 20px;" for="f1-5">Number:</label>
+                    <input type="number" id="f1-5" name="f1-5">
+                    <br>
+                    <label style="padding-right: 19px;" for="f1-6">Birthday:</label>
+                    <input style="padding-left: 33px;" type="date" name="f1-6" id="f1-6">
+                    <br>
+                    <input type="radio" name="gender" id="gender-male" value="male">
+                    <label for="gender-male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="gender-female" value="female">
+                    <label for="gender-female">Female</label>
+                    <br>
+                    <input type="radio" name="gender" id="gender-other" value="other">
+                    <label for="gender-other">Other</label>
+                    <br>
+                </fieldset>
+
+                <fieldset>
+                    <label for="Country">Country:</label>
+                    <input style="margin-left: 20px;" list="Country">
+                    <datalist id="Country">
+                        <option value="Russian"></option>
+                        <option value="Belarus"></option>
+                        <option value="Ukraine"></option>
+                        <option value="Poland"></option>
+                        <option value="Japan"></option>
+                    </datalist>
+                </fieldset>
+                <input style="margin-left: 2px;" type="reset" value="Reset">
+                <input style="margin-left: 9px;" type="submit" name="SendAction" value="To Register">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Sint ad et tempor culpa fugiat in qui sunt officia velit.</h2>
+    </div>
+</body>
+
+</html> 
